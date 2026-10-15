@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md"],
+  "default_agent": "trading-analyst",
+  "permission": {
+    "bash": {
+      ".venv/bin/python -m src.main *": "allow",
+      "python -m src.main *": "allow",
+      ".venv/bin/pytest*": "allow",
+      ".venv/bin/ruff*": "allow",
+      "*": "ask"
+    }
+  }
+}

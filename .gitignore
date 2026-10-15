@@ -1,0 +1,28 @@
+# Environment / secrets
+.env
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+
+# Runtime data (keep directory structure, ignore user data)
+data/raw/*.csv
+data/processed/*.csv
+data/paper/*.json
+data/news/*.json
+!data/**/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
